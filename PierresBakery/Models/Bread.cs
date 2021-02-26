@@ -4,11 +4,8 @@ namespace Bakery.Models
 {
   public class Bread 
   {
-    public int Cost { get; }
-
-    public Bread() 
-    {
-    
+    public static int BreadCost(int orderAmount) {
+      return 0;
     }
   }
 }
