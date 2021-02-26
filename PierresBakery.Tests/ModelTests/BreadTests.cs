@@ -10,7 +10,7 @@ namespace Bakery.Tests
     public void BreadCostMethod_ReturnsCostOfBread_Int()
     {
       int orderAmount = 10;
-      Assert.AreEqual(orderAmount, Bread.BreadCost(10));
+      Assert.AreEqual(0, Bread.BreadCost(10));
     }
   }
 }
