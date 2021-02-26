@@ -42,8 +42,11 @@ namespace Bakery
     }
 
     public static void BreadOrder() {
-      Bread newBread = new Bread(10);
-      Console.WriteLine("Bread");
+      Console.Write("How many loaves of Brad would you like: ");
+      int breadAmount =  int.Parse(Console.ReadLine());
+      string loaves = breadAmount == 1 ? "loaf" : "loaves";
+      Bread newBread = new Bread(breadAmount);
+      Console.WriteLine($"Your total for {breadAmount} {loaves} will be ${newBread.BreadCost()}.");
     }
 
     public static void PastryOrder() {
