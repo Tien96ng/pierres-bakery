@@ -19,7 +19,6 @@ namespace Bakery.Tests
     {
       Bread newBread = new Bread(10);
       int result = 35;
-      Console.WriteLine(newBread.BreadAmount);
       Assert.AreEqual(result, newBread.BreadCost());
     }
   }

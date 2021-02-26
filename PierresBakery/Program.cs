@@ -26,13 +26,28 @@ namespace Bakery
       } 
       else if(userSelection == "B" || userSelection == "P")
       {
-        Console.WriteLine("Bread and Pastry PlaceHolder Prompts for Amount to buy.");
+        if(userSelection == "B") 
+        {
+          BreadOrder();
+        }
+        else
+        {
+          PastryOrder();
+        }
       } 
       else 
       {
         Prompt("INVALID INPUT! Which would you like to buy [B/P/EXIT]: ");
-        // userSelection = Console.ReadLine().ToUpper();
       }
+    }
+
+    public static void BreadOrder() {
+      Bread newBread = new Bread(10);
+      Console.WriteLine("Bread");
+    }
+
+    public static void PastryOrder() {
+      Console.WriteLine("Pastry");
     }
   }
 }
