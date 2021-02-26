@@ -18,9 +18,8 @@ namespace Bakery.Tests
     public void BreadCostMethod_ReturnsCostOfBread_Int()
     {
       Bread newBread = new Bread(1);
-      int orderAmount = 10;
-      Console.WriteLine(newBread.BreadCost(10));
-      Assert.AreEqual(orderAmount, newBread.BreadCost(10));
+      int result = 35;
+      Assert.AreEqual(result, newBread.BreadCost(10));
     }
   }
 }
