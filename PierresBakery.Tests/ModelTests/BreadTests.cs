@@ -17,9 +17,10 @@ namespace Bakery.Tests
     [TestMethod]
     public void BreadCostMethod_ReturnsCostOfBread_Int()
     {
-      Bread newBread = new Bread(1);
+      Bread newBread = new Bread(10);
       int result = 35;
-      Assert.AreEqual(result, newBread.BreadCost(10));
+      Console.WriteLine(newBread.BreadAmount);
+      Assert.AreEqual(result, newBread.BreadCost());
     }
   }
 }

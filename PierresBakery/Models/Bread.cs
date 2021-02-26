@@ -12,11 +12,11 @@ namespace Bakery.Models
       BreadPrice = 5;
     }
 
-    public int BreadCost(int orderAmount) {
+    public int BreadCost() {
       int discount = 0;
-      int priceBeforeDiscount = orderAmount * 5;
+      int priceBeforeDiscount = BreadAmount * 5;
 
-      for(int i = 1; i <= orderAmount; i++) {
+      for(int i = 1; i <= BreadAmount; i++) {
         if(i % 3 == 0) {
           discount += 5;
         }
