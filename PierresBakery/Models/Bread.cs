@@ -5,13 +5,23 @@ namespace Bakery.Models
   public class Bread 
   {
     public int BreadAmount { get; }
+    public int BreadPrice { get; }
 
     public Bread(int orderAmount) {
       BreadAmount = orderAmount;
+      BreadPrice = 5;
     }
 
     public int BreadCost(int orderAmount) {
-      return orderAmount;
+      int discount = 0;
+      int priceBeforeDiscount = orderAmount * 5;
+
+      for(int i = 1; i <= orderAmount; i++) {
+        if(i % 3 == 0) {
+          discount += 5;
+        }
+      }
+      return priceBeforeDiscount - discount;
     }
   }
 }

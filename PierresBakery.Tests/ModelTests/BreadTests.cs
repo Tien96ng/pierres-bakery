@@ -1,4 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 using Bakery.Models;
 
 namespace Bakery.Tests 
@@ -18,6 +19,7 @@ namespace Bakery.Tests
     {
       Bread newBread = new Bread(1);
       int orderAmount = 10;
+      Console.WriteLine(newBread.BreadCost(10));
       Assert.AreEqual(orderAmount, newBread.BreadCost(10));
     }
   }

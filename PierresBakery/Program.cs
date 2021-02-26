@@ -1,4 +1,5 @@
 using System;
+using Bakery.Models;
 
 namespace Bakery 
 {
@@ -6,11 +7,14 @@ namespace Bakery
   {
     public static void Main() 
     {
-      Console.WriteLine("Welcome to Pierre's Bakery!");
-      Console.WriteLine("Here is our Menu:\n - Bread ${BREAD_PRICE_PLACEHOLDER}\n - Pastry ${BREAD_PRICE_PLACEHOLDER}");
-      
       Prompt("Which would you like to buy [B/P/EXIT]: ");
+    }
 
+    public static void WelcomePrompt() {
+      Console.WriteLine("Welcome to Pierre's Bakery!");
+      Console.WriteLine("Here is our Menu:");
+      Console.WriteLine($"- Bread {0}");
+      Console.WriteLine($"- Pastry {0}");
     }
 
     public static void Prompt(string msg) {
