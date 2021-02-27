@@ -11,7 +11,7 @@ namespace Bakery.Models {
     }
 
     public int PastryCost() {
-      return 0;
+      return (PastryAmount * PastryPrice) - (PastryAmount / 2 * 5);
     }
   }
 }

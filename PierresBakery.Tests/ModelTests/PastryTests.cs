@@ -25,8 +25,8 @@ namespace Bakery.Tests
     [TestMethod]
     public void PastryCostMethod_ReturnsCostOfPastry_Int()
     {
-      Pastry newPastry = new Pastry(30);
-      int result = 35;
+      Pastry newPastry = new Pastry(9);
+      int result = 25;
       Assert.AreEqual(result, newPastry.PastryCost());
     }
   }
