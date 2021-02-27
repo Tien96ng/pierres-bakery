@@ -13,15 +13,7 @@ namespace Bakery.Models
     }
 
     public int BreadCost() {
-      int discount = 0;
-      int priceBeforeDiscount = BreadAmount * BreadPrice;
-
-      for(int i = 1; i <= BreadAmount; i++) {
-        if(i % 3 == 0) {
-          discount += 5;
-        }
-      }
-      return priceBeforeDiscount - discount;
+      return (BreadAmount * BreadPrice) - (BreadAmount / 3 * BreadPrice);
     }
   }
 }
