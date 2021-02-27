@@ -6,6 +6,10 @@
 
 ## Technologies Used
 
+* _C# 9.0_
+* _.NET 5.0_
+* _MSTEST_
+
 ## Description
 
 ## Setup/Installation Requirements
