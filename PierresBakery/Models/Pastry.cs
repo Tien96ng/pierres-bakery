@@ -7,11 +7,11 @@ namespace Bakery.Models {
 
     public Pastry(int orderAmount) {
       PastryAmount = orderAmount;
-      PastryPrice = 5;
+      PastryPrice = 2;
     }
 
     public int PastryCost() {
-      return (PastryAmount * PastryPrice) - (PastryAmount / 2 * 5);
+      return (PastryAmount * PastryPrice) - (PastryAmount / 2 * 2);
     }
   }
 }

@@ -19,15 +19,15 @@ namespace Bakery.Tests
     public void PastryConstructor_PastryBasePrice_Pastry()
     {
       Pastry newPastry = new Pastry(1);
-      Assert.AreEqual(5, newPastry.PastryPrice);
+      Assert.AreEqual(2, newPastry.PastryPrice);
     }
 
-    [TestMethod]
-    public void PastryCostMethod_ReturnsCostOfPastry_Int()
-    {
-      Pastry newPastry = new Pastry(9);
-      int result = 25;
-      Assert.AreEqual(result, newPastry.PastryCost());
-    }
+    // [TestMethod]
+    // public void PastryCostMethod_ReturnsCostOfPastry_Int()
+    // {
+    //   Pastry newPastry = new Pastry(9);
+    //   int result = 25;
+    //   Assert.AreEqual(result, newPastry.PastryCost());
+    // }
   }
 }
