@@ -9,13 +9,15 @@ namespace Bakery.Tests
   {
 
     [TestMethod]
-    public void BreadConstructor_CreatesInstanceOfBread_Bread() {
+    public void BreadConstructor_CreatesInstanceOfBread_Bread() 
+    {
       Bread newBread = new Bread(1);
       Assert.AreEqual(1, newBread.BreadAmount);
     }
 
     [TestMethod]
-    public void BreadConstructor_BreadBasePrice_Bread() {
+    public void BreadConstructor_BreadBasePrice_Bread() 
+    {
       Bread newBread = new Bread(1);
       Assert.AreEqual(5, newBread.BreadPrice);
     }
