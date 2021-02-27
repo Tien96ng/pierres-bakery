@@ -7,14 +7,16 @@ namespace Bakery
   {
     public static void Main() 
     {
+      WelcomePrompt();
       Prompt("Which would you like to buy [B/P/EXIT]: ");
     }
 
     public static void WelcomePrompt() {
       Console.WriteLine("Welcome to Pierre's Bakery!");
       Console.WriteLine("Here is our Menu:");
-      Console.WriteLine($"- Bread: Buy 2, get 1 free. A single loaf costs $5.");
-      Console.WriteLine($"- Pastry Buy 1 for $2 or 3 for $5");
+      Console.WriteLine($"- Bread: Buy 1 for $5 OR buy 2, get 1 free. ");
+      Console.WriteLine($"- Pastry Buy 1 for $2 OR buy 3 for $5");
+      Console.WriteLine("");
     }
 
     public static void Prompt(string msg) {
@@ -44,6 +46,10 @@ namespace Bakery
     public static void BreadOrder() {
       Console.Write("How many loaves of Bread would you like: ");
       int amount =  int.Parse(Console.ReadLine());
+      while(amount < 0) {
+        Console.Write("Please enter in a VALID number of Bread loaves to buy: ");
+        amount =  int.Parse(Console.ReadLine());
+      }
       string loaves = amount == 1 ? "loaf" : "loaves";
       Bread newBread = new Bread(amount);
       Console.WriteLine("");
@@ -55,6 +61,10 @@ namespace Bakery
     public static void PastryOrder() {
       Console.Write("How many Pastries would you like: ");
       int amount =  int.Parse(Console.ReadLine());
+      while(amount < 0) {
+        Console.Write("Please enter in a VALID number of Pastries to buy: ");
+        amount =  int.Parse(Console.ReadLine());
+      }
       string pastries = amount == 1 ? "Pastry" : "Pastries";
       Pastry newPastry = new Pastry(amount);
       Console.WriteLine("");
