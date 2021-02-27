@@ -13,8 +13,8 @@ namespace Bakery
     public static void WelcomePrompt() {
       Console.WriteLine("Welcome to Pierre's Bakery!");
       Console.WriteLine("Here is our Menu:");
-      Console.WriteLine($"- Bread {0}");
-      Console.WriteLine($"- Pastry {0}");
+      Console.WriteLine($"- Bread: Buy 2, get 1 free. A single loaf costs $5.");
+      Console.WriteLine($"- Pastry Buy 1 for $2 or 3 for $5");
     }
 
     public static void Prompt(string msg) {
@@ -42,18 +42,25 @@ namespace Bakery
     }
 
     public static void BreadOrder() {
-      Console.Write("How many loaves of Brad would you like: ");
-      int breadAmount =  int.Parse(Console.ReadLine());
-      string loaves = breadAmount == 1 ? "loaf" : "loaves";
-      Bread newBread = new Bread(breadAmount);
+      Console.Write("How many loaves of Bread would you like: ");
+      int amount =  int.Parse(Console.ReadLine());
+      string loaves = amount == 1 ? "loaf" : "loaves";
+      Bread newBread = new Bread(amount);
       Console.WriteLine("");
-      Console.WriteLine($"Your total for {breadAmount} {loaves} will be ${newBread.BreadCost()}.");
+      Console.WriteLine($"Your total for {amount} {loaves} will be ${newBread.BreadCost()}.");
       Console.WriteLine("");
       Prompt("Would you like to continue shopping [B/P/EXIT]: ");
     }
 
     public static void PastryOrder() {
-      Console.WriteLine("Pastry");
+      Console.Write("How many Pastries would you like: ");
+      int amount =  int.Parse(Console.ReadLine());
+      string pastries = amount == 1 ? "Pastry" : "Pastries";
+      Pastry newPastry = new Pastry(amount);
+      Console.WriteLine("");
+      Console.WriteLine($"Your total for {amount} {pastries} will be ${newPastry.PastryCost()}.");
+      Console.WriteLine("");
+      Prompt("Would you like to continue shopping [B/P/EXIT]: ");
     }
   }
 }
