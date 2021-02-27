@@ -1,6 +1,6 @@
 # Pierre's Bakery
 
-#### {Short Description}
+#### Console app for a Bakery. Allows the customer to purchase _Bread_ and/or _Pastries_ "N" amount of times for "N" units.
 
 #### By Tien Nguyen
 
