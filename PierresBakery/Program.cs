@@ -46,7 +46,10 @@ namespace Bakery
       int breadAmount =  int.Parse(Console.ReadLine());
       string loaves = breadAmount == 1 ? "loaf" : "loaves";
       Bread newBread = new Bread(breadAmount);
+      Console.WriteLine("");
       Console.WriteLine($"Your total for {breadAmount} {loaves} will be ${newBread.BreadCost()}.");
+      Console.WriteLine("");
+      Prompt("Would you like to continue shopping [B/P/EXIT]: ");
     }
 
     public static void PastryOrder() {
