@@ -17,9 +17,12 @@ _A console application for "Pierre's Bakery" that mimics a real interaction from
 
 ### Installing C# and .NET:
   **1a.** _WINDOWS: Download the [64-bit .NET 5 SDK](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-5.0.102-windows-x64-installer). Clicking these links will prompt a **.exe** file download from Microsoft_.\
-  \**1b.** MAC: Download this [.NET 5 SDK](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-5.0.100-macos-x64-installer). Clicking this link will prompt a **.pkg** file download from Microsoft.\
-  \**2.** _Open the file and follow the steps provided by the installer for your OS_.\
-  \**3.** _Confirm the installation is successful by opening a new Windows PowerShell OR Max Terminal window and running the command dotnet --version_.\
+  \
+  **1b.** MAC: Download this [.NET 5 SDK](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-5.0.100-macos-x64-installer). Clicking this link will prompt a **.pkg** file download from Microsoft.\
+  \
+  **2.** _Open the file and follow the steps provided by the installer for your OS_.\
+  \
+  **3.** _Confirm the installation is successful by opening a new Windows PowerShell OR Max Terminal window and running the command dotnet --version_.\
 
 ### Local Environment Setup
 1. _Clone the repo or download the ZIP file of the repo._
