@@ -16,10 +16,10 @@ _A console application for "Pierre's Bakery" that mimics a real interaction from
 ## Setup/Installation Requirements
 
 ### Installing C# and .NET:
-1a. WINDOWS: Download the [64-bit .NET 5 SDK](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-5.0.102-windows-x64-installer). Clicking these links will prompt a **.exe** file download from Microsoft.\
-1b. MAC: Download this [.NET 5 SDK](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-5.0.100-macos-x64-installer). Clicking this link will prompt a **.pkg** file download from Microsoft.\
-2. Open the file and follow the steps provided by the installer for your OS.\
-3. Confirm the installation is successful by opening a new Windows PowerShell window and running the command dotnet --version.\
+**1a.** WINDOWS: Download the [64-bit .NET 5 SDK](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-5.0.102-windows-x64-installer). Clicking these links will prompt a **.exe** file download from Microsoft.\
+**1b.** MAC: Download this [.NET 5 SDK](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-5.0.100-macos-x64-installer). Clicking this link will prompt a **.pkg** file download from Microsoft.\
+**2.** Open the file and follow the steps provided by the installer for your OS.\
+**3.** Confirm the installation is successful by opening a new Windows PowerShell window and running the command dotnet --version.\
 
 ### Local Environment Setup
 1. _Clone the repo or download the ZIP file of the repo._
@@ -35,6 +35,10 @@ _A console application for "Pierre's Bakery" that mimics a real interaction from
 * _None at the moment (2/26/2021)_
 
 ## Project Goals / Further Exploration
+- _Buy different kinds of Bread and Pastry to expand on custom classes._
+- _Add additional deals to items._
+- _Use inheritance to DRY up both classes._
+- _Use static variables._
 
 ## License
 _This software is licensed under the MIT license_\
