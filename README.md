@@ -13,7 +13,7 @@
 ## Description
 _A console application for "Pierre's Bakery" that mimics a real interaction from the bakery. The App will begin with a welcome message along with the cost of the two consumables for sale: Bread and Pastries. The user has the choice of order "N" loaves of Bread or Pastries continuously. The App calculates the price depending on each item's Deal Price (Ex. Buy 1 Get 1 Free) and their base price using custom classes and properties within._
 
-## Setup/Installation Requirements
+## Setup / Installation Requirements
 
 ### Installing C# and .NET:
 **1a.** WINDOWS: Download the [64-bit .NET 5 SDK](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-5.0.102-windows-x64-installer). Clicking these links will prompt a **.exe** file download from Microsoft.\
