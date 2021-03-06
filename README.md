@@ -28,10 +28,18 @@ _A console application for "Pierre's Bakery" that mimics a real interaction from
 1. _Clone the repo or download the ZIP file of the repo._
 2. _Navigate to the main directory of the repo._
 3. _Open the repo's main directory in the Code Editor of your choice._
-6. _Run the **FIRST** command in your terminal within the repo's main directory (Example: /PierresBakery/): __"dotnet build"__._
+5. _Run the **FIRST** command in your terminal within the repo's main directory (Example: /PierresBakery/): __"dotnet build"__._
 6. _Run the **SECOND** command in your terminal within the same main directory (Example: /PierresBakery/): __"dotnet run"__._
 7. _The App should now be running in your console._
 8. _To stop the app during any moment, press the following combination of keys: _**CTRL**_ + _**C**_._
+
+### Using TDD with MSTest
+1. _Clone the repo or download the ZIP file of the repo._
+2. _Navigate to the **TEST** directory of the repo._
+3. _Run the **FIRST** command in your terminal within the repo's **TEST** directory (Example: /PierresBakery.Tests/): __"dotnet restore"__._
+4. _Run the **SECOND** command in your terminal within the same **TEST** directory (Example: /PierresBakery.Tests/): __"dotnet test"__._
+5. _The test cases should now be running in your console._
+6. _The Console should print to the terminal the results (Example: Fail / Pass)._
 
 ## Known Bugs
 
