@@ -43,12 +43,24 @@ namespace Bakery
       }
     }
 
+    public static int TryReadInt(string prompt)
+    {
+      Console.Write(prompt);
+      int amount = -1;
+      try {
+        amount = int.Parse(Console.ReadLine());
+      }
+      catch
+      {
+        amount = -1;
+      }
+      return amount;
+    }
+
     public static void BreadOrder() {
-      Console.Write("How many loaves of Bread would you like: ");
-      int amount =  int.Parse(Console.ReadLine());
+      int amount = TryReadInt("How many loaves of Bread would you like: ");
       while(amount < 0) {
-        Console.Write("Please enter in a VALID number of Bread loaves to buy: ");
-        amount =  int.Parse(Console.ReadLine());
+        amount = TryReadInt("Please enter in a VALID number of Bread loaves to buy: ");
       }
       string loaves = amount == 1 ? "loaf" : "loaves";
       Bread newBread = new Bread(amount);
@@ -59,11 +71,9 @@ namespace Bakery
     }
 
     public static void PastryOrder() {
-      Console.Write("How many Pastries would you like: ");
-      int amount =  int.Parse(Console.ReadLine());
+      int amount =  TryReadInt("How many Pastries would you like: ");
       while(amount < 0) {
-        Console.Write("Please enter in a VALID number of Pastries to buy: ");
-        amount =  int.Parse(Console.ReadLine());
+        amount = TryReadInt("Please enter in a VALID number of Pastries to buy: ");
       }
       string pastries = amount == 1 ? "Pastry" : "Pastries";
       Pastry newPastry = new Pastry(amount);
